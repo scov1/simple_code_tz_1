@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_code_tz_1/generated/l10n.dart';
 import 'package:simple_code_tz_1/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -17,7 +18,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Авторизация'),
+        title: Text(S.of(context).auth),
       ),
       body: Column(
         children: [
@@ -30,12 +31,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Center(
+                      Center(
                         child: Padding(
-                          padding: EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.all(16.0),
                           child: Text(
-                            'Введите логин и пароль',
-                            style: TextStyle(
+                            S.of(context).inputLoginAndPassword,
+                            style: const TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                         ),
@@ -44,10 +45,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         maxLength: 8,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Введите логин';
+                            return S.of(context).inputErrorCheckLogin;
                           }
                           if (value.length < 3) {
-                            return 'Логин должен содержать не менее 3 символов';
+                            return S.of(context).inputErrorLoginIsShort;
                           }
                           return null;
                         },
@@ -55,8 +56,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           login = value;
                         },
                         style: const TextStyle(fontSize: 20),
-                        decoration: const InputDecoration(
-                          hintText: 'Логин',
+                        decoration: InputDecoration(
+                          hintText:  S.of(context).login,
                         ),
                       ),
                       const SizedBox(height: 20),
@@ -65,10 +66,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         obscureText: true,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Введите пароль';
+                            return  S.of(context).inputErrorCheckPassword;
                           }
                           if (value.length < 8) {
-                            return 'Пароль должен содержать не менее 8 символов';
+                            return  S.of(context).inputErorPasswordIsShort;
                           }
                           return null;
                         },
@@ -76,8 +77,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           password = value;
                         },
                         style: const TextStyle(fontSize: 20),
-                        decoration: const InputDecoration(
-                          hintText: 'Пароль',
+                        decoration: InputDecoration(
+                          hintText:  S.of(context).password,
                         ),
                       ),
                     ],
@@ -110,13 +111,13 @@ class _LoginScreenState extends State<LoginScreen> {
                             showDialog(
                               context: context,
                               builder: (context) => AlertDialog(
-                                title: const Text('Попробовать снова'),
+                                title: Text(S.of(context).tryAgain),
                                 actions: <Widget>[
                                   ElevatedButton(
                                     onPressed: () {
                                       Navigator.of(context).pop();
                                     },
-                                    child: const Text('Закрыть'),
+                                    child: Text(S.of(context).close),
                                   ),
                                 ],
                               ),
@@ -124,8 +125,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           }
                         }
                       },
-                      child: const Text('Вход',
-                          style: TextStyle(
+                      child: Text(S.of(context).signIn,
+                          style: const TextStyle(
                               fontSize: 18, fontWeight: FontWeight.bold))),
                 ),
               ),
