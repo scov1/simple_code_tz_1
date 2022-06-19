@@ -13,5 +13,8 @@
     "signIn": "Sign In",
     "language": "Language",
     "english": "English",
-    "russian": "Russian"
+    "russian": "Russian",
+    "findCharacter": "Find character",
+    "allCharacter": "All characters:",
+    "listCharacterBtn": "List Character"
 }

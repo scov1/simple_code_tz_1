@@ -22,10 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "allCharacter": MessageLookupByLibrary.simpleMessage("All characters:"),
         "auth": MessageLookupByLibrary.simpleMessage("Authorization"),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "counterValue": MessageLookupByLibrary.simpleMessage("Counter value"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
+        "findCharacter": MessageLookupByLibrary.simpleMessage("Find character"),
         "inputErorPasswordIsShort": MessageLookupByLibrary.simpleMessage(
             "Password must contain more than 8 symbols"),
         "inputErrorCheckLogin":
@@ -37,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "inputLoginAndPassword":
             MessageLookupByLibrary.simpleMessage("Input login and password"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
+        "listCharacterBtn":
+            MessageLookupByLibrary.simpleMessage("List Character"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "russian": MessageLookupByLibrary.simpleMessage("Russian"),

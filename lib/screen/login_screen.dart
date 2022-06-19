@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
-import 'package:simple_code_tz_1/home_screen.dart';
+import 'package:simple_code_tz_1/screen/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -104,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    const HomeScreen(title: 'TZ-3'),
+                                    const HomeScreen(title: 'TZ-3',),
                               ),
                             );
                           } else {

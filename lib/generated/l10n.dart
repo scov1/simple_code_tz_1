@@ -199,6 +199,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Find character`
+  String get findCharacter {
+    return Intl.message(
+      'Find character',
+      name: 'findCharacter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All characters:`
+  String get allCharacter {
+    return Intl.message(
+      'All characters:',
+      name: 'allCharacter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `List Character`
+  String get listCharacterBtn {
+    return Intl.message(
+      'List Character',
+      name: 'listCharacterBtn',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

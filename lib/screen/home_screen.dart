@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
+import 'package:simple_code_tz_1/screens/character_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key, required this.title}) : super(key: key);
@@ -69,6 +70,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     },
                     items: dropdownItems),
               ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 24.0),
+            child: ElevatedButton(
+              child: Text(S.of(context).listCharacterBtn),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const CharacterScreen()),
+                );
+              },
             ),
           ),
           Expanded(
