@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:simple_code_tz_1/constants/app_colors.dart';
 import 'package:simple_code_tz_1/constants/app_styles.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
 import 'package:simple_code_tz_1/models/character.dart';
-import 'package:simple_code_tz_1/widgets/character_grid_view.dart';
+import 'package:simple_code_tz_1/screens/settings_screen.dart';
+import 'package:simple_code_tz_1/widgets/bottom_nav_bar_widget.dart';
+import 'package:simple_code_tz_1/widgets/character_grid_view_widget.dart';
 import 'package:simple_code_tz_1/widgets/character_list_widget.dart';
 
 class CharacterScreen extends StatefulWidget {
@@ -17,13 +18,22 @@ class CharacterScreen extends StatefulWidget {
 class _CharacterScreenState extends State<CharacterScreen> {
   CharacterList characterList = CharacterList();
   bool _isListView = true;
+  int selectedTab = 0;
+
+   void onSelectedTab(int index) {
+    if (selectedTab == index) return;
+    setState(
+      () {
+        selectedTab = index;
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(top: 70.0),
-        child: Column(
+      body: IndexedStack(index: selectedTab, children: [
+        Column(
           children: [
             _searchCharacter(),
             _countCharacterRow(),
@@ -32,13 +42,15 @@ class _CharacterScreenState extends State<CharacterScreen> {
                 : CharacterGridViewWidget(characterList: characterList)
           ],
         ),
-      ),
+        const SettingsScreen()
+      ]),
+      bottomNavigationBar: BottomNavBar(selectedTab: selectedTab,onSelectedTab: onSelectedTab,)
     );
   }
 
   Widget _searchCharacter() {
     return Padding(
-      padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+      padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 70),
       child: TextField(
         decoration: InputDecoration(
           border: OutlineInputBorder(
@@ -67,9 +79,11 @@ class _CharacterScreenState extends State<CharacterScreen> {
           ),
           InkWell(
             onTap: () {
-              setState(() {
-                _isListView = !_isListView;
-              });
+              setState(
+                () {
+                  _isListView = !_isListView;
+                },
+              );
             },
             child: _isListView
                 ? const Icon(Icons.list)

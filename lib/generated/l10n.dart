@@ -229,6 +229,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Don't have an account yet? `
+  String get createAccountText {
+    return Intl.message(
+      'Don\'t have an account yet? ',
+      name: 'createAccountText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create`
+  String get create {
+    return Intl.message(
+      'Create',
+      name: 'create',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Error`
+  String get error {
+    return Intl.message(
+      'Error',
+      name: 'error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid login or password`
+  String get invalidLoginOrPassword {
+    return Intl.message(
+      'Invalid login or password',
+      name: 'invalidLoginOrPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OK`
+  String get ok {
+    return Intl.message(
+      'OK',
+      name: 'ok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Characters`
+  String get characters {
+    return Intl.message(
+      'Characters',
+      name: 'characters',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

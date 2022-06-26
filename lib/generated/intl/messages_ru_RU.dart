@@ -25,10 +25,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "allCharacter":
             MessageLookupByLibrary.simpleMessage("Всего персонажей:"),
         "auth": MessageLookupByLibrary.simpleMessage("Авторизация"),
+        "characters": MessageLookupByLibrary.simpleMessage("Персонажи"),
         "close": MessageLookupByLibrary.simpleMessage("Закрыть"),
         "counterValue":
             MessageLookupByLibrary.simpleMessage("Значение счетчика"),
+        "create": MessageLookupByLibrary.simpleMessage("Создать"),
+        "createAccountText":
+            MessageLookupByLibrary.simpleMessage("У вас еще нет аккаунта? "),
         "english": MessageLookupByLibrary.simpleMessage("Английский"),
+        "error": MessageLookupByLibrary.simpleMessage("Ошибка"),
         "findCharacter":
             MessageLookupByLibrary.simpleMessage("Найти персонажа"),
         "inputErorPasswordIsShort": MessageLookupByLibrary.simpleMessage(
@@ -41,13 +46,16 @@ class MessageLookup extends MessageLookupByLibrary {
             "Логин должен содержать не менее 3 символов"),
         "inputLoginAndPassword":
             MessageLookupByLibrary.simpleMessage("Введите логин и пароль"),
+        "invalidLoginOrPassword": MessageLookupByLibrary.simpleMessage(
+            "Введён неверный логин или пароль"),
         "language": MessageLookupByLibrary.simpleMessage("Язык"),
         "listCharacterBtn":
             MessageLookupByLibrary.simpleMessage("Список персонажей"),
         "login": MessageLookupByLibrary.simpleMessage("Логин"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "russian": MessageLookupByLibrary.simpleMessage("Русский"),
-        "signIn": MessageLookupByLibrary.simpleMessage("Вход"),
+        "settings": MessageLookupByLibrary.simpleMessage("Настройки"),
+        "signIn": MessageLookupByLibrary.simpleMessage("Войти"),
         "tryAgain": MessageLookupByLibrary.simpleMessage("Попробуйте снова")
       };
 }

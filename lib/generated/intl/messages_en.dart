@@ -24,9 +24,14 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "allCharacter": MessageLookupByLibrary.simpleMessage("All characters:"),
         "auth": MessageLookupByLibrary.simpleMessage("Authorization"),
+        "characters": MessageLookupByLibrary.simpleMessage("Characters"),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "counterValue": MessageLookupByLibrary.simpleMessage("Counter value"),
+        "create": MessageLookupByLibrary.simpleMessage("Create"),
+        "createAccountText": MessageLookupByLibrary.simpleMessage(
+            "Don\'t have an account yet? "),
         "english": MessageLookupByLibrary.simpleMessage("English"),
+        "error": MessageLookupByLibrary.simpleMessage("Error"),
         "findCharacter": MessageLookupByLibrary.simpleMessage("Find character"),
         "inputErorPasswordIsShort": MessageLookupByLibrary.simpleMessage(
             "Password must contain more than 8 symbols"),
@@ -38,12 +43,16 @@ class MessageLookup extends MessageLookupByLibrary {
             "Login must contain more than 3 symbols"),
         "inputLoginAndPassword":
             MessageLookupByLibrary.simpleMessage("Input login and password"),
+        "invalidLoginOrPassword":
+            MessageLookupByLibrary.simpleMessage("Invalid login or password"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "listCharacterBtn":
             MessageLookupByLibrary.simpleMessage("List Character"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "russian": MessageLookupByLibrary.simpleMessage("Russian"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "tryAgain": MessageLookupByLibrary.simpleMessage("Try again")
       };

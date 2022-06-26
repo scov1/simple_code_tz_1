@@ -18,7 +18,6 @@ class CharacterGridViewWidget extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           final result = characterList.characters[index];
           return Container(
-          //  height: MediaQuery.of(context).size.height / 8,
             alignment: Alignment.center,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,

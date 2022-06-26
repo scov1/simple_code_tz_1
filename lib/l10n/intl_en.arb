@@ -16,5 +16,12 @@
     "russian": "Russian",
     "findCharacter": "Find character",
     "allCharacter": "All characters:",
-    "listCharacterBtn": "List Character"
+    "listCharacterBtn": "List Character",
+    "createAccountText" : "Don't have an account yet? ",
+    "create" : "Create",
+    "error": "Error",
+    "invalidLoginOrPassword" : "Invalid login or password",
+    "ok" : "OK",
+    "settings" : "Settings",
+    "characters" : "Characters"
 }

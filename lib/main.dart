@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
-import 'package:simple_code_tz_1/screen/home_screen.dart';
+import 'package:simple_code_tz_1/screens/splash_screen.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.black,
+      statusBarIconBrightness: Brightness.light,
+    ),
+  );
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       locale: const Locale('ru','RU'),
-      home: const HomeScreen(title: 'TZ-3',),
+      home: const SplashScreen(),
     );
   }
 }
