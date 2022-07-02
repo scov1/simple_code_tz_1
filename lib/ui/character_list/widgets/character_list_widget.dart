@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:simple_code_tz_1/constants/app_assets.dart';
 import 'package:simple_code_tz_1/constants/app_styles.dart';
-import 'package:simple_code_tz_1/models/character.dart';
+import 'package:simple_code_tz_1/data/models/character.dart';
 
 class CharacterListWidget extends StatelessWidget {
-  final CharacterList listCharacter;
-  const CharacterListWidget({Key? key, required this.listCharacter})
+  final List<Character> characters;
+  const CharacterListWidget({Key? key, required this.characters})
       : super(key: key);
 
   @override
@@ -12,7 +13,7 @@ class CharacterListWidget extends StatelessWidget {
     return Expanded(
       child: ListView.separated(
           itemBuilder: (context, index) {
-            final result = listCharacter.characters[index];
+            final result = characters[index];
             return Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16),
@@ -20,26 +21,29 @@ class CharacterListWidget extends StatelessWidget {
                 height: MediaQuery.of(context).size.height / 8,
                 child: Row(children: [
                   CircleAvatar(
-                    radius: 60,
-                    backgroundImage: AssetImage(
-                      result.image,
-                    ),
-                  ),
+                      radius: 60,
+                      backgroundImage: result.image == null
+                          ? AssetImage(
+                              AppAssets.images.noAvatar,
+                            ) as ImageProvider
+                          : NetworkImage(result.image!)),
                   Padding(
                     padding: const EdgeInsets.only(left: 10, top: 15),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          result.status.toUpperCase(),
-                          style: result.status == 'Живой'
+                          result.status!.toUpperCase(),
+                          style: result.status!.toLowerCase() == 'alive'
                               ? AppStyles.s10w500green
-                              : AppStyles.s10w500red,
+                              : result.status!.toLowerCase() == "unknown"
+                                  ? AppStyles.s10w500gray
+                                  : AppStyles.s10w500red,
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 10.0),
                           child: Text(
-                            result.name,
+                            result.name!,
                             style: AppStyles.s16w500main,
                           ),
                         ),
@@ -48,11 +52,11 @@ class CharacterListWidget extends StatelessWidget {
                           child: Row(
                             children: [
                               Text(
-                                result.type,
+                                "${result.species!}, ",
                                 style: AppStyles.s12w400,
                               ),
                               Text(
-                                result.gender,
+                                result.gender!,
                                 style: AppStyles.s12w400,
                               ),
                             ],
@@ -66,7 +70,7 @@ class CharacterListWidget extends StatelessWidget {
             );
           },
           separatorBuilder: (_, index) => const SizedBox.shrink(),
-          itemCount: listCharacter.characters.length),
+          itemCount: characters.length),
     );
   }
 }

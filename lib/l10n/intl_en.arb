@@ -23,5 +23,7 @@
     "invalidLoginOrPassword" : "Invalid login or password",
     "ok" : "OK",
     "settings" : "Settings",
-    "characters" : "Characters"
+    "characters" : "Characters",
+    "somethingWentWrong": "Something went wrong",
+    "characterListIsEmpty" : "Character list is empty..."
 }

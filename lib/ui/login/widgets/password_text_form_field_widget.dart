@@ -6,10 +6,8 @@ import 'package:simple_code_tz_1/constants/app_styles.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
 
 class PasswordTextFormFieldWidget extends StatelessWidget {
-  const PasswordTextFormFieldWidget({
-    Key? key,
-    required this.onSaved
-  }) : super(key: key);
+  const PasswordTextFormFieldWidget({Key? key, required this.onSaved})
+      : super(key: key);
 
   final Function(String?) onSaved;
 

@@ -27,6 +27,11 @@ class AppStyles{
     fontWeight: FontWeight.w400,
     color: AppColors.descText
   );
+  static const s10w500grey = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w500,
+    color: AppColors.descText
+  );
   static const s10w500gray = TextStyle(
     fontSize: 10,
     fontWeight: FontWeight.w500,

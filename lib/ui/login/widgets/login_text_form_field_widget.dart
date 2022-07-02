@@ -6,10 +6,8 @@ import 'package:simple_code_tz_1/constants/app_styles.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
 
 class LoginTextFormFieldWidget extends StatelessWidget {
-  const LoginTextFormFieldWidget({
-    Key? key,
-    required this.onSaved
-  }) : super(key: key);
+  const LoginTextFormFieldWidget({Key? key, required this.onSaved})
+      : super(key: key);
 
   final Function(String?) onSaved;
 
@@ -25,7 +23,7 @@ class LoginTextFormFieldWidget extends StatelessWidget {
         }
         return null;
       },
-      onTap: (){
+      onTap: () {
         FocusScope.of(context).unfocus();
       },
       onSaved: onSaved,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 import 'package:simple_code_tz_1/constants/app_styles.dart';
+import 'package:simple_code_tz_1/data/repository/settings_repository.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -61,6 +63,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   selectedValue = newValue!;
                   await S.load(Locale(selectedValue));
                   setState(() {});
+                  if (!mounted) return;
+                  final settingsRepository = Provider.of<SettingsRepository>(context,listen: false);
+                  settingsRepository.saveLocale(selectedValue);
                 },
                 items: dropdownItems),
             ],

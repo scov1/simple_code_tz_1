@@ -22,5 +22,7 @@
     "invalidLoginOrPassword" : "Введён неверный логин или пароль",
     "error" : "Ошибка",
     "settings" : "Настройки",
-    "characters": "Персонажи"
+    "characters": "Персонажи",
+    "somethingWentWrong": "Что-то пошло не так",
+    "characterListIsEmpty": "Список персонажей пуст..."
 }

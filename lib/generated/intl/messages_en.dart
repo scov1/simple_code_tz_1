@@ -24,6 +24,8 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "allCharacter": MessageLookupByLibrary.simpleMessage("All characters:"),
         "auth": MessageLookupByLibrary.simpleMessage("Authorization"),
+        "characterListIsEmpty":
+            MessageLookupByLibrary.simpleMessage("Character list is empty..."),
         "characters": MessageLookupByLibrary.simpleMessage("Characters"),
         "close": MessageLookupByLibrary.simpleMessage("Close"),
         "counterValue": MessageLookupByLibrary.simpleMessage("Counter value"),
@@ -54,6 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "russian": MessageLookupByLibrary.simpleMessage("Russian"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
+        "somethingWentWrong":
+            MessageLookupByLibrary.simpleMessage("Something went wrong"),
         "tryAgain": MessageLookupByLibrary.simpleMessage("Try again")
       };
 }

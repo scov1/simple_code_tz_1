@@ -299,6 +299,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Something went wrong`
+  String get somethingWentWrong {
+    return Intl.message(
+      'Something went wrong',
+      name: 'somethingWentWrong',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Character list is empty...`
+  String get characterListIsEmpty {
+    return Intl.message(
+      'Character list is empty...',
+      name: 'characterListIsEmpty',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
