@@ -1,15 +1,20 @@
-import 'dart:convert';
 import 'package:simple_code_tz_1/data/models/character.dart';
+import 'package:simple_code_tz_1/data/repository/api.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
-import 'package:http/http.dart' as http;
 
 class CharacterRepository {
-  Future<ResultCharacterRepository> getAllCharacters() async {
+  final Api api;
+  CharacterRepository({required this.api});
+
+  Future<ResultCharacterRepository> filterByName(String name) async {
     try {
-      String api = 'https://rickandmortyapi.com/api/character';
-      final response = await http.get(Uri.parse(api));
-      final data = jsonDecode(response.body);
-      final characterListJson = data['results'] as List;
+      final result = await api.dio.get(
+        '/character/',
+        queryParameters: {
+          "name": name,
+        },
+      );
+      final characterListJson = result.data['results'] as List;
       final characterList = characterListJson
           .map(
             (json) => Character.fromJson(json),

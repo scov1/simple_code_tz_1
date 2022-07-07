@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:simple_code_tz_1/bloc/characters/bloc_character.dart';
+import 'package:simple_code_tz_1/bloc/characters/events.dart';
+import 'package:simple_code_tz_1/data/repository/api.dart';
 import 'package:simple_code_tz_1/data/repository/character_repository.dart';
 import 'package:simple_code_tz_1/data/repository/settings_repository.dart';
 
@@ -9,16 +12,33 @@ class InitWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
+    return MultiRepositoryProvider(
       providers: [
-        Provider(
+        RepositoryProvider(
+          create: (context) => Api(),
+        ),
+        RepositoryProvider(
           create: (context) => SettingsRepository(),
         ),
-        Provider(
-          create: (context) => CharacterRepository(),
+        RepositoryProvider(
+          create: (context) => CharacterRepository(
+            api: RepositoryProvider.of<Api>(context),
+          ),
         ),
       ],
-      child: child,
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (context) => BlocCharacter(
+              characterRepository:
+                  RepositoryProvider.of<CharacterRepository>(context),
+            )..add(
+                EventCharacterFilterByName(''),
+              ),
+          )
+        ],
+        child: child,
+      ),
     );
   }
 }

@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:simple_code_tz_1/constants/app_styles.dart';
 import 'package:simple_code_tz_1/data/repository/settings_repository.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
+import 'package:simple_code_tz_1/widgets/bottom_nav_bar_widget.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -35,9 +36,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
       appBar: AppBar(
         centerTitle: false,
         title: Text(
-            S.of(context).settings,
-            style: AppStyles.s20w500main,
-            
+          S.of(context).settings,
+          style: AppStyles.s20w500main,
         ),
         elevation: 0.0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
@@ -58,20 +58,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ),
               ),
               DropdownButton(
-                value: Intl.getCurrentLocale(),
-                onChanged: (String? newValue) async {
-                  selectedValue = newValue!;
-                  await S.load(Locale(selectedValue));
-                  setState(() {});
-                  if (!mounted) return;
-                  final settingsRepository = Provider.of<SettingsRepository>(context,listen: false);
-                  settingsRepository.saveLocale(selectedValue);
-                },
-                items: dropdownItems),
+                  value: Intl.getCurrentLocale(),
+                  onChanged: (String? newValue) async {
+                    selectedValue = newValue!;
+                    await S.load(Locale(selectedValue));
+                    setState(() {});
+                    if (!mounted) return;
+                    final settingsRepository =
+                        Provider.of<SettingsRepository>(context, listen: false);
+                    settingsRepository.saveLocale(selectedValue);
+                  },
+                  items: dropdownItems),
             ],
           ),
         ],
       ),
+      bottomNavigationBar: const BottomNavBar(selectedTab: 1),
     );
   }
 }
