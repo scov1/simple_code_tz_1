@@ -25,5 +25,9 @@
     "settings" : "Settings",
     "characters" : "Characters",
     "somethingWentWrong": "Something went wrong",
-    "characterListIsEmpty" : "Character list is empty..."
+    "characterListIsEmpty" : "Character list is empty...",
+    "locations" : "Locations",
+    "allLocation" : "All locations: ",
+    "findLocation": "Find location",
+    "aired" : "Aired"
 }

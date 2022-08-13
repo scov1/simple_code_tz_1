@@ -22,8 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "aired": MessageLookupByLibrary.simpleMessage("Премьера"),
         "allCharacter":
             MessageLookupByLibrary.simpleMessage("Всего персонажей:"),
+        "allLocation": MessageLookupByLibrary.simpleMessage("Всего локаций: "),
         "auth": MessageLookupByLibrary.simpleMessage("Авторизация"),
         "characterListIsEmpty":
             MessageLookupByLibrary.simpleMessage("Список персонажей пуст..."),
@@ -38,6 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "error": MessageLookupByLibrary.simpleMessage("Ошибка"),
         "findCharacter":
             MessageLookupByLibrary.simpleMessage("Найти персонажа"),
+        "findLocation": MessageLookupByLibrary.simpleMessage("Найти локацию"),
         "inputErorPasswordIsShort": MessageLookupByLibrary.simpleMessage(
             "Пароль должен содержать не менее 8 символов"),
         "inputErrorCheckLogin":
@@ -53,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "language": MessageLookupByLibrary.simpleMessage("Язык"),
         "listCharacterBtn":
             MessageLookupByLibrary.simpleMessage("Список персонажей"),
+        "locations": MessageLookupByLibrary.simpleMessage("Локации"),
         "login": MessageLookupByLibrary.simpleMessage("Логин"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "russian": MessageLookupByLibrary.simpleMessage("Русский"),

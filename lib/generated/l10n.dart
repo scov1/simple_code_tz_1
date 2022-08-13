@@ -319,6 +319,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Locations`
+  String get locations {
+    return Intl.message(
+      'Locations',
+      name: 'locations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `All locations: `
+  String get allLocation {
+    return Intl.message(
+      'All locations: ',
+      name: 'allLocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Find location`
+  String get findLocation {
+    return Intl.message(
+      'Find location',
+      name: 'findLocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Aired`
+  String get aired {
+    return Intl.message(
+      'Aired',
+      name: 'aired',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

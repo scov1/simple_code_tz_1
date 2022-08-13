@@ -12,6 +12,11 @@ class AppStyles{
     fontWeight: FontWeight.w500,
     color: AppColors.statusTextAlive
   );
+  static const s14w500green = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.statusTextAlive
+  );
   static const s10w500red = TextStyle(
     fontSize: 10,
     fontWeight: FontWeight.w500,
@@ -80,6 +85,18 @@ class AppStyles{
     fontSize: 20,
     fontWeight: FontWeight.w500,
     color: AppColors.mainText
+  );
+
+  static const s25w500main = TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeight.bold,
+    color: AppColors.mainText
+  );
+
+  static const s20w500desc = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: AppColors.descText
   );
 
 }

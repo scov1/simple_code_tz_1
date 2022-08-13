@@ -4,6 +4,7 @@ import 'package:simple_code_tz_1/constants/app_assets.dart';
 import 'package:simple_code_tz_1/constants/app_colors.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
 import 'package:simple_code_tz_1/ui/character_list/character_screen.dart';
+import 'package:simple_code_tz_1/ui/location/location_screen.dart';
 import 'package:simple_code_tz_1/ui/settings_screen.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -38,8 +39,19 @@ class BottomNavBar extends StatelessWidget {
               label: S.of(context).characters),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              AppAssets.svg.settingsIcon,
+              AppAssets.svg.locationIcon,
+              width: 24,
+              height: 24,
               color: selectedTab == 1
+                  ? AppColors.primary
+                  : AppColors.textFiledMain,
+            ),
+            label: S.of(context).locations,
+          ), 
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(
+              AppAssets.svg.settingsIcon,
+              color: selectedTab == 2
                   ? AppColors.primary
                   : AppColors.textFiledMain,
             ),
@@ -53,6 +65,11 @@ class BottomNavBar extends StatelessWidget {
               (route) => false,
             );
           } else if (index == 1) {
+            Navigator.of(context).pushAndRemoveUntil(
+              _createRoute(const LocationScreen()),
+              (route) => false,
+            );
+          } else if (index == 2) {
             Navigator.of(context).pushAndRemoveUntil(
               _createRoute(const SettingsScreen()),
               (route) => false,
