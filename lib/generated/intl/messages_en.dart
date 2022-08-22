@@ -35,6 +35,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "createAccountText": MessageLookupByLibrary.simpleMessage(
             "Don\'t have an account yet? "),
         "english": MessageLookupByLibrary.simpleMessage("English"),
+        "episodes": MessageLookupByLibrary.simpleMessage("Episodes"),
+        "episodesListIsEmpty":
+            MessageLookupByLibrary.simpleMessage("Episodes list is empty..."),
         "error": MessageLookupByLibrary.simpleMessage("Error"),
         "findCharacter": MessageLookupByLibrary.simpleMessage("Find character"),
         "findLocation": MessageLookupByLibrary.simpleMessage("Find location"),
@@ -53,6 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "listCharacterBtn":
             MessageLookupByLibrary.simpleMessage("List Character"),
+        "locationListIsEmpty":
+            MessageLookupByLibrary.simpleMessage("Location list is empty..."),
         "locations": MessageLookupByLibrary.simpleMessage("Locations"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "ok": MessageLookupByLibrary.simpleMessage("OK"),
@@ -61,7 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "somethingWentWrong":
-            MessageLookupByLibrary.simpleMessage("Something went wrong"),
+            MessageLookupByLibrary.simpleMessage("Something went wrong..."),
         "tryAgain": MessageLookupByLibrary.simpleMessage("Try again")
       };
 }

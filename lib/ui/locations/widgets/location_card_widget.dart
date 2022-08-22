@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simple_code_tz_1/constants/app_styles.dart';
 import 'package:simple_code_tz_1/data/models/location.dart';
-import 'package:simple_code_tz_1/ui/location/location_details_screen.dart';
+import 'package:simple_code_tz_1/ui/locations/location_details_screen.dart';
 
 class LocationCardWidget extends StatelessWidget {
   final Location location;

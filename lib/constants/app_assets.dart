@@ -23,6 +23,7 @@ class _Svg{
   final String characterIcon = 'assets/images/svg/character_icon.svg';
   final String settingsIcon = 'assets/images/svg/settings_icon.svg';
   final String locationIcon = 'assets/images/svg/location.svg';
+  final String tvIcon = 'assets/images/svg/tv.svg';
 
 
 }

@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'location_states.dart';
+part of 'episode_states.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,14 +15,14 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$StateBlocLocation {
+mixin _$StateBlocEpisode {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(String error) error,
     required TResult Function(
-            List<Location> data, bool isLoading, String? errorMessage)
+            List<Episodes> data, bool isLoading, String? errorMessage)
         data,
   }) =>
       throw _privateConstructorUsedError;
@@ -31,7 +31,7 @@ mixin _$StateBlocLocation {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
   }) =>
       throw _privateConstructorUsedError;
@@ -40,88 +40,88 @@ mixin _$StateBlocLocation {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(StateLocationInitial value) initial,
-    required TResult Function(StateLocationLoading value) loading,
-    required TResult Function(StateLocationError value) error,
-    required TResult Function(StateLocationData value) data,
+    required TResult Function(StateEpisodeInitial value) initial,
+    required TResult Function(StateEpisodeLoading value) loading,
+    required TResult Function(StateEpisodeError value) error,
+    required TResult Function(StateEpisodeData value) data,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $StateBlocLocationCopyWith<$Res> {
-  factory $StateBlocLocationCopyWith(
-          StateBlocLocation value, $Res Function(StateBlocLocation) then) =
-      _$StateBlocLocationCopyWithImpl<$Res>;
+abstract class $StateBlocEpisodeCopyWith<$Res> {
+  factory $StateBlocEpisodeCopyWith(
+          StateBlocEpisode value, $Res Function(StateBlocEpisode) then) =
+      _$StateBlocEpisodeCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$StateBlocLocationCopyWithImpl<$Res>
-    implements $StateBlocLocationCopyWith<$Res> {
-  _$StateBlocLocationCopyWithImpl(this._value, this._then);
+class _$StateBlocEpisodeCopyWithImpl<$Res>
+    implements $StateBlocEpisodeCopyWith<$Res> {
+  _$StateBlocEpisodeCopyWithImpl(this._value, this._then);
 
-  final StateBlocLocation _value;
+  final StateBlocEpisode _value;
   // ignore: unused_field
-  final $Res Function(StateBlocLocation) _then;
+  final $Res Function(StateBlocEpisode) _then;
 }
 
 /// @nodoc
-abstract class _$$StateLocationInitialCopyWith<$Res> {
-  factory _$$StateLocationInitialCopyWith(_$StateLocationInitial value,
-          $Res Function(_$StateLocationInitial) then) =
-      __$$StateLocationInitialCopyWithImpl<$Res>;
+abstract class _$$StateEpisodeInitialCopyWith<$Res> {
+  factory _$$StateEpisodeInitialCopyWith(_$StateEpisodeInitial value,
+          $Res Function(_$StateEpisodeInitial) then) =
+      __$$StateEpisodeInitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$StateLocationInitialCopyWithImpl<$Res>
-    extends _$StateBlocLocationCopyWithImpl<$Res>
-    implements _$$StateLocationInitialCopyWith<$Res> {
-  __$$StateLocationInitialCopyWithImpl(_$StateLocationInitial _value,
-      $Res Function(_$StateLocationInitial) _then)
-      : super(_value, (v) => _then(v as _$StateLocationInitial));
+class __$$StateEpisodeInitialCopyWithImpl<$Res>
+    extends _$StateBlocEpisodeCopyWithImpl<$Res>
+    implements _$$StateEpisodeInitialCopyWith<$Res> {
+  __$$StateEpisodeInitialCopyWithImpl(
+      _$StateEpisodeInitial _value, $Res Function(_$StateEpisodeInitial) _then)
+      : super(_value, (v) => _then(v as _$StateEpisodeInitial));
 
   @override
-  _$StateLocationInitial get _value => super._value as _$StateLocationInitial;
+  _$StateEpisodeInitial get _value => super._value as _$StateEpisodeInitial;
 }
 
 /// @nodoc
 
-class _$StateLocationInitial implements StateLocationInitial {
-  const _$StateLocationInitial();
+class _$StateEpisodeInitial implements StateEpisodeInitial {
+  const _$StateEpisodeInitial();
 
   @override
   String toString() {
-    return 'StateBlocLocation.initial()';
+    return 'StateBlocEpisode.initial()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$StateLocationInitial);
+        (other.runtimeType == runtimeType && other is _$StateEpisodeInitial);
   }
 
   @override
@@ -134,7 +134,7 @@ class _$StateLocationInitial implements StateLocationInitial {
     required TResult Function() loading,
     required TResult Function(String error) error,
     required TResult Function(
-            List<Location> data, bool isLoading, String? errorMessage)
+            List<Episodes> data, bool isLoading, String? errorMessage)
         data,
   }) {
     return initial();
@@ -146,7 +146,7 @@ class _$StateLocationInitial implements StateLocationInitial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
   }) {
     return initial?.call();
@@ -158,7 +158,7 @@ class _$StateLocationInitial implements StateLocationInitial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
     required TResult orElse(),
   }) {
@@ -171,10 +171,10 @@ class _$StateLocationInitial implements StateLocationInitial {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(StateLocationInitial value) initial,
-    required TResult Function(StateLocationLoading value) loading,
-    required TResult Function(StateLocationError value) error,
-    required TResult Function(StateLocationData value) data,
+    required TResult Function(StateEpisodeInitial value) initial,
+    required TResult Function(StateEpisodeLoading value) loading,
+    required TResult Function(StateEpisodeError value) error,
+    required TResult Function(StateEpisodeData value) data,
   }) {
     return initial(this);
   }
@@ -182,10 +182,10 @@ class _$StateLocationInitial implements StateLocationInitial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
   }) {
     return initial?.call(this);
   }
@@ -193,10 +193,10 @@ class _$StateLocationInitial implements StateLocationInitial {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -206,43 +206,43 @@ class _$StateLocationInitial implements StateLocationInitial {
   }
 }
 
-abstract class StateLocationInitial implements StateBlocLocation {
-  const factory StateLocationInitial() = _$StateLocationInitial;
+abstract class StateEpisodeInitial implements StateBlocEpisode {
+  const factory StateEpisodeInitial() = _$StateEpisodeInitial;
 }
 
 /// @nodoc
-abstract class _$$StateLocationLoadingCopyWith<$Res> {
-  factory _$$StateLocationLoadingCopyWith(_$StateLocationLoading value,
-          $Res Function(_$StateLocationLoading) then) =
-      __$$StateLocationLoadingCopyWithImpl<$Res>;
+abstract class _$$StateEpisodeLoadingCopyWith<$Res> {
+  factory _$$StateEpisodeLoadingCopyWith(_$StateEpisodeLoading value,
+          $Res Function(_$StateEpisodeLoading) then) =
+      __$$StateEpisodeLoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$StateLocationLoadingCopyWithImpl<$Res>
-    extends _$StateBlocLocationCopyWithImpl<$Res>
-    implements _$$StateLocationLoadingCopyWith<$Res> {
-  __$$StateLocationLoadingCopyWithImpl(_$StateLocationLoading _value,
-      $Res Function(_$StateLocationLoading) _then)
-      : super(_value, (v) => _then(v as _$StateLocationLoading));
+class __$$StateEpisodeLoadingCopyWithImpl<$Res>
+    extends _$StateBlocEpisodeCopyWithImpl<$Res>
+    implements _$$StateEpisodeLoadingCopyWith<$Res> {
+  __$$StateEpisodeLoadingCopyWithImpl(
+      _$StateEpisodeLoading _value, $Res Function(_$StateEpisodeLoading) _then)
+      : super(_value, (v) => _then(v as _$StateEpisodeLoading));
 
   @override
-  _$StateLocationLoading get _value => super._value as _$StateLocationLoading;
+  _$StateEpisodeLoading get _value => super._value as _$StateEpisodeLoading;
 }
 
 /// @nodoc
 
-class _$StateLocationLoading implements StateLocationLoading {
-  const _$StateLocationLoading();
+class _$StateEpisodeLoading implements StateEpisodeLoading {
+  const _$StateEpisodeLoading();
 
   @override
   String toString() {
-    return 'StateBlocLocation.loading()';
+    return 'StateBlocEpisode.loading()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$StateLocationLoading);
+        (other.runtimeType == runtimeType && other is _$StateEpisodeLoading);
   }
 
   @override
@@ -255,7 +255,7 @@ class _$StateLocationLoading implements StateLocationLoading {
     required TResult Function() loading,
     required TResult Function(String error) error,
     required TResult Function(
-            List<Location> data, bool isLoading, String? errorMessage)
+            List<Episodes> data, bool isLoading, String? errorMessage)
         data,
   }) {
     return loading();
@@ -267,7 +267,7 @@ class _$StateLocationLoading implements StateLocationLoading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
   }) {
     return loading?.call();
@@ -279,7 +279,7 @@ class _$StateLocationLoading implements StateLocationLoading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
     required TResult orElse(),
   }) {
@@ -292,10 +292,10 @@ class _$StateLocationLoading implements StateLocationLoading {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(StateLocationInitial value) initial,
-    required TResult Function(StateLocationLoading value) loading,
-    required TResult Function(StateLocationError value) error,
-    required TResult Function(StateLocationData value) data,
+    required TResult Function(StateEpisodeInitial value) initial,
+    required TResult Function(StateEpisodeLoading value) loading,
+    required TResult Function(StateEpisodeError value) error,
+    required TResult Function(StateEpisodeData value) data,
   }) {
     return loading(this);
   }
@@ -303,10 +303,10 @@ class _$StateLocationLoading implements StateLocationLoading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
   }) {
     return loading?.call(this);
   }
@@ -314,10 +314,10 @@ class _$StateLocationLoading implements StateLocationLoading {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -327,34 +327,34 @@ class _$StateLocationLoading implements StateLocationLoading {
   }
 }
 
-abstract class StateLocationLoading implements StateBlocLocation {
-  const factory StateLocationLoading() = _$StateLocationLoading;
+abstract class StateEpisodeLoading implements StateBlocEpisode {
+  const factory StateEpisodeLoading() = _$StateEpisodeLoading;
 }
 
 /// @nodoc
-abstract class _$$StateLocationErrorCopyWith<$Res> {
-  factory _$$StateLocationErrorCopyWith(_$StateLocationError value,
-          $Res Function(_$StateLocationError) then) =
-      __$$StateLocationErrorCopyWithImpl<$Res>;
+abstract class _$$StateEpisodeErrorCopyWith<$Res> {
+  factory _$$StateEpisodeErrorCopyWith(
+          _$StateEpisodeError value, $Res Function(_$StateEpisodeError) then) =
+      __$$StateEpisodeErrorCopyWithImpl<$Res>;
   $Res call({String error});
 }
 
 /// @nodoc
-class __$$StateLocationErrorCopyWithImpl<$Res>
-    extends _$StateBlocLocationCopyWithImpl<$Res>
-    implements _$$StateLocationErrorCopyWith<$Res> {
-  __$$StateLocationErrorCopyWithImpl(
-      _$StateLocationError _value, $Res Function(_$StateLocationError) _then)
-      : super(_value, (v) => _then(v as _$StateLocationError));
+class __$$StateEpisodeErrorCopyWithImpl<$Res>
+    extends _$StateBlocEpisodeCopyWithImpl<$Res>
+    implements _$$StateEpisodeErrorCopyWith<$Res> {
+  __$$StateEpisodeErrorCopyWithImpl(
+      _$StateEpisodeError _value, $Res Function(_$StateEpisodeError) _then)
+      : super(_value, (v) => _then(v as _$StateEpisodeError));
 
   @override
-  _$StateLocationError get _value => super._value as _$StateLocationError;
+  _$StateEpisodeError get _value => super._value as _$StateEpisodeError;
 
   @override
   $Res call({
     Object? error = freezed,
   }) {
-    return _then(_$StateLocationError(
+    return _then(_$StateEpisodeError(
       error == freezed
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -365,22 +365,22 @@ class __$$StateLocationErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$StateLocationError implements StateLocationError {
-  const _$StateLocationError(this.error);
+class _$StateEpisodeError implements StateEpisodeError {
+  const _$StateEpisodeError(this.error);
 
   @override
   final String error;
 
   @override
   String toString() {
-    return 'StateBlocLocation.error(error: $error)';
+    return 'StateBlocEpisode.error(error: $error)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$StateLocationError &&
+            other is _$StateEpisodeError &&
             const DeepCollectionEquality().equals(other.error, error));
   }
 
@@ -390,9 +390,8 @@ class _$StateLocationError implements StateLocationError {
 
   @JsonKey(ignore: true)
   @override
-  _$$StateLocationErrorCopyWith<_$StateLocationError> get copyWith =>
-      __$$StateLocationErrorCopyWithImpl<_$StateLocationError>(
-          this, _$identity);
+  _$$StateEpisodeErrorCopyWith<_$StateEpisodeError> get copyWith =>
+      __$$StateEpisodeErrorCopyWithImpl<_$StateEpisodeError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -401,7 +400,7 @@ class _$StateLocationError implements StateLocationError {
     required TResult Function() loading,
     required TResult Function(String error) error,
     required TResult Function(
-            List<Location> data, bool isLoading, String? errorMessage)
+            List<Episodes> data, bool isLoading, String? errorMessage)
         data,
   }) {
     return error(this.error);
@@ -413,7 +412,7 @@ class _$StateLocationError implements StateLocationError {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
   }) {
     return error?.call(this.error);
@@ -425,7 +424,7 @@ class _$StateLocationError implements StateLocationError {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
     required TResult orElse(),
   }) {
@@ -438,10 +437,10 @@ class _$StateLocationError implements StateLocationError {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(StateLocationInitial value) initial,
-    required TResult Function(StateLocationLoading value) loading,
-    required TResult Function(StateLocationError value) error,
-    required TResult Function(StateLocationData value) data,
+    required TResult Function(StateEpisodeInitial value) initial,
+    required TResult Function(StateEpisodeLoading value) loading,
+    required TResult Function(StateEpisodeError value) error,
+    required TResult Function(StateEpisodeData value) data,
   }) {
     return error(this);
   }
@@ -449,10 +448,10 @@ class _$StateLocationError implements StateLocationError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
   }) {
     return error?.call(this);
   }
@@ -460,10 +459,10 @@ class _$StateLocationError implements StateLocationError {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -473,33 +472,33 @@ class _$StateLocationError implements StateLocationError {
   }
 }
 
-abstract class StateLocationError implements StateBlocLocation {
-  const factory StateLocationError(final String error) = _$StateLocationError;
+abstract class StateEpisodeError implements StateBlocEpisode {
+  const factory StateEpisodeError(final String error) = _$StateEpisodeError;
 
   String get error;
   @JsonKey(ignore: true)
-  _$$StateLocationErrorCopyWith<_$StateLocationError> get copyWith =>
+  _$$StateEpisodeErrorCopyWith<_$StateEpisodeError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$StateLocationDataCopyWith<$Res> {
-  factory _$$StateLocationDataCopyWith(
-          _$StateLocationData value, $Res Function(_$StateLocationData) then) =
-      __$$StateLocationDataCopyWithImpl<$Res>;
-  $Res call({List<Location> data, bool isLoading, String? errorMessage});
+abstract class _$$StateEpisodeDataCopyWith<$Res> {
+  factory _$$StateEpisodeDataCopyWith(
+          _$StateEpisodeData value, $Res Function(_$StateEpisodeData) then) =
+      __$$StateEpisodeDataCopyWithImpl<$Res>;
+  $Res call({List<Episodes> data, bool isLoading, String? errorMessage});
 }
 
 /// @nodoc
-class __$$StateLocationDataCopyWithImpl<$Res>
-    extends _$StateBlocLocationCopyWithImpl<$Res>
-    implements _$$StateLocationDataCopyWith<$Res> {
-  __$$StateLocationDataCopyWithImpl(
-      _$StateLocationData _value, $Res Function(_$StateLocationData) _then)
-      : super(_value, (v) => _then(v as _$StateLocationData));
+class __$$StateEpisodeDataCopyWithImpl<$Res>
+    extends _$StateBlocEpisodeCopyWithImpl<$Res>
+    implements _$$StateEpisodeDataCopyWith<$Res> {
+  __$$StateEpisodeDataCopyWithImpl(
+      _$StateEpisodeData _value, $Res Function(_$StateEpisodeData) _then)
+      : super(_value, (v) => _then(v as _$StateEpisodeData));
 
   @override
-  _$StateLocationData get _value => super._value as _$StateLocationData;
+  _$StateEpisodeData get _value => super._value as _$StateEpisodeData;
 
   @override
   $Res call({
@@ -507,11 +506,11 @@ class __$$StateLocationDataCopyWithImpl<$Res>
     Object? isLoading = freezed,
     Object? errorMessage = freezed,
   }) {
-    return _then(_$StateLocationData(
+    return _then(_$StateEpisodeData(
       data: data == freezed
           ? _value._data
           : data // ignore: cast_nullable_to_non_nullable
-              as List<Location>,
+              as List<Episodes>,
       isLoading: isLoading == freezed
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -526,16 +525,16 @@ class __$$StateLocationDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$StateLocationData implements StateLocationData {
-  const _$StateLocationData(
-      {required final List<Location> data,
+class _$StateEpisodeData implements StateEpisodeData {
+  const _$StateEpisodeData(
+      {required final List<Episodes> data,
       this.isLoading = false,
       this.errorMessage})
       : _data = data;
 
-  final List<Location> _data;
+  final List<Episodes> _data;
   @override
-  List<Location> get data {
+  List<Episodes> get data {
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_data);
   }
@@ -548,14 +547,14 @@ class _$StateLocationData implements StateLocationData {
 
   @override
   String toString() {
-    return 'StateBlocLocation.data(data: $data, isLoading: $isLoading, errorMessage: $errorMessage)';
+    return 'StateBlocEpisode.data(data: $data, isLoading: $isLoading, errorMessage: $errorMessage)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$StateLocationData &&
+            other is _$StateEpisodeData &&
             const DeepCollectionEquality().equals(other._data, _data) &&
             const DeepCollectionEquality().equals(other.isLoading, isLoading) &&
             const DeepCollectionEquality()
@@ -571,8 +570,8 @@ class _$StateLocationData implements StateLocationData {
 
   @JsonKey(ignore: true)
   @override
-  _$$StateLocationDataCopyWith<_$StateLocationData> get copyWith =>
-      __$$StateLocationDataCopyWithImpl<_$StateLocationData>(this, _$identity);
+  _$$StateEpisodeDataCopyWith<_$StateEpisodeData> get copyWith =>
+      __$$StateEpisodeDataCopyWithImpl<_$StateEpisodeData>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -581,7 +580,7 @@ class _$StateLocationData implements StateLocationData {
     required TResult Function() loading,
     required TResult Function(String error) error,
     required TResult Function(
-            List<Location> data, bool isLoading, String? errorMessage)
+            List<Episodes> data, bool isLoading, String? errorMessage)
         data,
   }) {
     return data(this.data, isLoading, errorMessage);
@@ -593,7 +592,7 @@ class _$StateLocationData implements StateLocationData {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
   }) {
     return data?.call(this.data, isLoading, errorMessage);
@@ -605,7 +604,7 @@ class _$StateLocationData implements StateLocationData {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(String error)? error,
-    TResult Function(List<Location> data, bool isLoading, String? errorMessage)?
+    TResult Function(List<Episodes> data, bool isLoading, String? errorMessage)?
         data,
     required TResult orElse(),
   }) {
@@ -618,10 +617,10 @@ class _$StateLocationData implements StateLocationData {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(StateLocationInitial value) initial,
-    required TResult Function(StateLocationLoading value) loading,
-    required TResult Function(StateLocationError value) error,
-    required TResult Function(StateLocationData value) data,
+    required TResult Function(StateEpisodeInitial value) initial,
+    required TResult Function(StateEpisodeLoading value) loading,
+    required TResult Function(StateEpisodeError value) error,
+    required TResult Function(StateEpisodeData value) data,
   }) {
     return data(this);
   }
@@ -629,10 +628,10 @@ class _$StateLocationData implements StateLocationData {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
   }) {
     return data?.call(this);
   }
@@ -640,10 +639,10 @@ class _$StateLocationData implements StateLocationData {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(StateLocationInitial value)? initial,
-    TResult Function(StateLocationLoading value)? loading,
-    TResult Function(StateLocationError value)? error,
-    TResult Function(StateLocationData value)? data,
+    TResult Function(StateEpisodeInitial value)? initial,
+    TResult Function(StateEpisodeLoading value)? loading,
+    TResult Function(StateEpisodeError value)? error,
+    TResult Function(StateEpisodeData value)? data,
     required TResult orElse(),
   }) {
     if (data != null) {
@@ -653,16 +652,16 @@ class _$StateLocationData implements StateLocationData {
   }
 }
 
-abstract class StateLocationData implements StateBlocLocation {
-  const factory StateLocationData(
-      {required final List<Location> data,
+abstract class StateEpisodeData implements StateBlocEpisode {
+  const factory StateEpisodeData(
+      {required final List<Episodes> data,
       final bool isLoading,
-      final String? errorMessage}) = _$StateLocationData;
+      final String? errorMessage}) = _$StateEpisodeData;
 
-  List<Location> get data;
+  List<Episodes> get data;
   bool get isLoading;
   String? get errorMessage;
   @JsonKey(ignore: true)
-  _$$StateLocationDataCopyWith<_$StateLocationData> get copyWith =>
+  _$$StateEpisodeDataCopyWith<_$StateEpisodeData> get copyWith =>
       throw _privateConstructorUsedError;
 }

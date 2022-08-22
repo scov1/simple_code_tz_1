@@ -17,6 +17,17 @@ class AppStyles{
     fontWeight: FontWeight.w500,
     color: AppColors.statusTextAlive
   );
+  static const s14w500background = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textFieldBack,
+    letterSpacing: 1
+  );
+  static const s14w500light = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textFieldBack,
+  );
   static const s10w500red = TextStyle(
     fontSize: 10,
     fontWeight: FontWeight.w500,
@@ -26,6 +37,11 @@ class AppStyles{
     fontSize: 16,
     fontWeight: FontWeight.w500,
     color: AppColors.mainText
+  );
+  static const s16w500 = TextStyle(
+    fontSize: 17,
+    fontWeight: FontWeight.w700,
+    color: Colors.white
   );
   static const s12w400 = TextStyle(
     fontSize: 12,

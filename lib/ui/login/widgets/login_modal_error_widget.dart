@@ -3,8 +3,8 @@ import 'package:simple_code_tz_1/constants/app_colors.dart';
 import 'package:simple_code_tz_1/constants/app_styles.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
 
-class ModalErrorWidget extends StatelessWidget {
-  const ModalErrorWidget({
+class LoginModalErrorWidget extends StatelessWidget {
+  const LoginModalErrorWidget({
     Key? key,
   }) : super(key: key);
 

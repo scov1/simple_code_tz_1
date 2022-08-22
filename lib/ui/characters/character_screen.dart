@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:simple_code_tz_1/bloc/characters/bloc_character.dart';
-import 'package:simple_code_tz_1/bloc/characters/event_character_bloc.dart';
-import 'package:simple_code_tz_1/bloc/characters/state_character_bloc.dart';
+import 'package:simple_code_tz_1/bloc/characters/character_events.dart';
+import 'package:simple_code_tz_1/bloc/characters/character_states.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
-import 'package:simple_code_tz_1/ui/character_list/widgets/character_list_widget.dart';
-import 'package:simple_code_tz_1/ui/character_list/widgets/count_character_row_widget.dart';
+import 'package:simple_code_tz_1/ui/characters/widgets/character_list_widget.dart';
+import 'package:simple_code_tz_1/ui/characters/widgets/count_character_row_widget.dart';
 import 'package:simple_code_tz_1/widgets/bottom_nav_bar_widget.dart';
 import 'widgets/character_grid_view_widget.dart';
 import 'widgets/search_character_widget.dart';

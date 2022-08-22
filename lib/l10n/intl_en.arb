@@ -24,10 +24,14 @@
     "ok" : "OK",
     "settings" : "Settings",
     "characters" : "Characters",
-    "somethingWentWrong": "Something went wrong",
+    "somethingWentWrong": "Something went wrong...",
     "characterListIsEmpty" : "Character list is empty...",
+    "locationListIsEmpty" : "Location list is empty...",
     "locations" : "Locations",
     "allLocation" : "All locations: ",
     "findLocation": "Find location",
-    "aired" : "Aired"
+    "aired" : "Aired",
+    "episodes" : "Episodes",
+    "episodesListIsEmpty" : "Episodes list is empty..."
+
 }

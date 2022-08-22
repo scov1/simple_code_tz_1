@@ -6,3 +6,5 @@ class EventLocationFilterByName extends EventBlocLocation{
 
   EventLocationFilterByName(this.name);
 }
+
+class EventLocationNextPage extends EventBlocLocation{}

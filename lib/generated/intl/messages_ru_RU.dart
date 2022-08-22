@@ -37,6 +37,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "createAccountText":
             MessageLookupByLibrary.simpleMessage("У вас еще нет аккаунта? "),
         "english": MessageLookupByLibrary.simpleMessage("Английский"),
+        "episodes": MessageLookupByLibrary.simpleMessage("Эпизоды"),
+        "episodesListIsEmpty":
+            MessageLookupByLibrary.simpleMessage("Список эпизодов пуст..."),
         "error": MessageLookupByLibrary.simpleMessage("Ошибка"),
         "findCharacter":
             MessageLookupByLibrary.simpleMessage("Найти персонажа"),
@@ -56,6 +59,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "language": MessageLookupByLibrary.simpleMessage("Язык"),
         "listCharacterBtn":
             MessageLookupByLibrary.simpleMessage("Список персонажей"),
+        "locationListIsEmpty":
+            MessageLookupByLibrary.simpleMessage("Список локаций пуст..."),
         "locations": MessageLookupByLibrary.simpleMessage("Локации"),
         "login": MessageLookupByLibrary.simpleMessage("Логин"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),

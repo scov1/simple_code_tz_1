@@ -300,10 +300,10 @@ class S {
     );
   }
 
-  /// `Something went wrong`
+  /// `Something went wrong...`
   String get somethingWentWrong {
     return Intl.message(
-      'Something went wrong',
+      'Something went wrong...',
       name: 'somethingWentWrong',
       desc: '',
       args: [],
@@ -315,6 +315,16 @@ class S {
     return Intl.message(
       'Character list is empty...',
       name: 'characterListIsEmpty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Location list is empty...`
+  String get locationListIsEmpty {
+    return Intl.message(
+      'Location list is empty...',
+      name: 'locationListIsEmpty',
       desc: '',
       args: [],
     );
@@ -355,6 +365,26 @@ class S {
     return Intl.message(
       'Aired',
       name: 'aired',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Episodes`
+  String get episodes {
+    return Intl.message(
+      'Episodes',
+      name: 'episodes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Episodes list is empty...`
+  String get episodesListIsEmpty {
+    return Intl.message(
+      'Episodes list is empty...',
+      name: 'episodesListIsEmpty',
       desc: '',
       args: [],
     );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:simple_code_tz_1/bloc/characters/bloc_character.dart';
-import 'package:simple_code_tz_1/bloc/characters/state_character_bloc.dart';
+import 'package:simple_code_tz_1/bloc/characters/character_states.dart';
 import 'package:simple_code_tz_1/constants/app_styles.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
 

@@ -3,11 +3,11 @@ import 'package:simple_code_tz_1/constants/app_assets.dart';
 import 'package:simple_code_tz_1/constants/app_colors.dart';
 import 'package:simple_code_tz_1/constants/app_styles.dart';
 import 'package:simple_code_tz_1/generated/l10n.dart';
-import 'package:simple_code_tz_1/ui/character_list/character_screen.dart';
+import 'package:simple_code_tz_1/ui/characters/character_screen.dart';
 import 'package:simple_code_tz_1/ui/login/widgets/login_text_form_field_widget.dart';
 import 'package:simple_code_tz_1/ui/login/widgets/password_text_form_field_widget.dart';
 import 'widgets/create_account_widget.dart';
-import 'widgets/modal_error_widget.dart';
+import 'widgets/login_modal_error_widget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -36,9 +36,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Align(
-                        child: Image.asset(AppAssets.images.logo,
-                            alignment: Alignment.center),
+                      Expanded(
+                        child: Align(
+                          child: Image.asset(AppAssets.images.logo,
+                              alignment: Alignment.center),
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(
@@ -100,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             showDialog(
                               context: context,
                               builder: (context) =>
-                                  const ModalErrorWidget(),
+                                  const LoginModalErrorWidget(),
                             );
                           }
                         }

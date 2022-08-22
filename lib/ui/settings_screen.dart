@@ -73,7 +73,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
         ],
       ),
-      bottomNavigationBar: const BottomNavBar(selectedTab: 2),
+      bottomNavigationBar: const BottomNavBar(selectedTab: 3),
     );
   }
 }
